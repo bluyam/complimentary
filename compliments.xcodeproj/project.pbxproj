@@ -14,6 +14,9 @@
 		F52623501C22107400F79090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F526234E1C22107400F79090 /* LaunchScreen.storyboard */; };
 		F526235B1C22107400F79090 /* complimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F526235A1C22107400F79090 /* complimentsTests.swift */; };
 		F52623661C22107400F79090 /* complimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52623651C22107400F79090 /* complimentsUITests.swift */; };
+		F52623741C22165D00F79090 /* messenger.png in Resources */ = {isa = PBXBuildFile; fileRef = F52623731C22165D00F79090 /* messenger.png */; };
+		F52623761C22173F00F79090 /* imessage.png in Resources */ = {isa = PBXBuildFile; fileRef = F52623751C22173F00F79090 /* imessage.png */; };
+		F526237A1C22206E00F79090 /* refresh_white.png in Resources */ = {isa = PBXBuildFile; fileRef = F52623791C22206E00F79090 /* refresh_white.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		F52623611C22107400F79090 /* complimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = complimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52623651C22107400F79090 /* complimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = complimentsUITests.swift; sourceTree = "<group>"; };
 		F52623671C22107400F79090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52623731C22165D00F79090 /* messenger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messenger.png; sourceTree = "<group>"; };
+		F52623751C22173F00F79090 /* imessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imessage.png; sourceTree = "<group>"; };
+		F52623791C22206E00F79090 /* refresh_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh_white.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 		F52623441C22107400F79090 /* compliments */ = {
 			isa = PBXGroup;
 			children = (
+				F52623791C22206E00F79090 /* refresh_white.png */,
+				F52623751C22173F00F79090 /* imessage.png */,
+				F52623731C22165D00F79090 /* messenger.png */,
 				F52623451C22107400F79090 /* AppDelegate.swift */,
 				F52623471C22107400F79090 /* ViewController.swift */,
 				F52623491C22107400F79090 /* Main.storyboard */,
@@ -230,6 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F52623501C22107400F79090 /* LaunchScreen.storyboard in Resources */,
+				F526237A1C22206E00F79090 /* refresh_white.png in Resources */,
+				F52623761C22173F00F79090 /* imessage.png in Resources */,
+				F52623741C22165D00F79090 /* messenger.png in Resources */,
 				F526234D1C22107400F79090 /* Assets.xcassets in Resources */,
 				F526234B1C22107400F79090 /* Main.storyboard in Resources */,
 			);
@@ -482,6 +494,7 @@
 				F526236C1C22107400F79090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F526236D1C22107400F79090 /* Build configuration list for PBXNativeTarget "complimentsTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +503,7 @@
 				F526236F1C22107400F79090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F52623701C22107400F79090 /* Build configuration list for PBXNativeTarget "complimentsUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +512,7 @@
 				F52623721C22107400F79090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

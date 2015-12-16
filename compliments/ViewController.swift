@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var messengerBackgroundView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // set rounded corners for simulated messenger app icon
+        messengerBackgroundView.layer.cornerRadius = 13
     }
 
     override func didReceiveMemoryWarning() {
