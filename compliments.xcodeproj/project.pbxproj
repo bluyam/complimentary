@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F52469651C2343AC00FE7404 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F52469641C2343AC00FE7404 /* facebook.png */; };
+		F52469671C2345B000FE7404 /* facebook-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F52469661C2345B000FE7404 /* facebook-app-icon.png */; };
+		F52469691C23469900FE7404 /* f_icon-svg.png in Resources */ = {isa = PBXBuildFile; fileRef = F52469681C23469900FE7404 /* f_icon-svg.png */; };
 		F52623461C22107400F79090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52623451C22107400F79090 /* AppDelegate.swift */; };
 		F52623481C22107400F79090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52623471C22107400F79090 /* ViewController.swift */; };
 		F526234B1C22107400F79090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52623491C22107400F79090 /* Main.storyboard */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F52469641C2343AC00FE7404 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		F52469661C2345B000FE7404 /* facebook-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-app-icon.png"; sourceTree = "<group>"; };
+		F52469681C23469900FE7404 /* f_icon-svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f_icon-svg.png"; sourceTree = "<group>"; };
 		F52623421C22107400F79090 /* compliments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = compliments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52623451C22107400F79090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52623471C22107400F79090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 				F52623451C22107400F79090 /* AppDelegate.swift */,
 				F52623471C22107400F79090 /* ViewController.swift */,
 				F52623491C22107400F79090 /* Main.storyboard */,
+				F52469681C23469900FE7404 /* f_icon-svg.png */,
+				F52469641C2343AC00FE7404 /* facebook.png */,
+				F52469661C2345B000FE7404 /* facebook-app-icon.png */,
 				F526234C1C22107400F79090 /* Assets.xcassets */,
 				F526234E1C22107400F79090 /* LaunchScreen.storyboard */,
 				F52623511C22107400F79090 /* Info.plist */,
@@ -241,8 +250,11 @@
 				F52623501C22107400F79090 /* LaunchScreen.storyboard in Resources */,
 				F526237A1C22206E00F79090 /* refresh_white.png in Resources */,
 				F52623761C22173F00F79090 /* imessage.png in Resources */,
+				F52469651C2343AC00FE7404 /* facebook.png in Resources */,
 				F52623741C22165D00F79090 /* messenger.png in Resources */,
 				F526234D1C22107400F79090 /* Assets.xcassets in Resources */,
+				F52469691C23469900FE7404 /* f_icon-svg.png in Resources */,
+				F52469671C2345B000FE7404 /* facebook-app-icon.png in Resources */,
 				F526234B1C22107400F79090 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

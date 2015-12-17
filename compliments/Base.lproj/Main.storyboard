@@ -17,43 +17,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have such a way with words!" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="6m5-il-E1c">
-                                <rect key="frame" x="48" y="130" width="223" height="181"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                            <view clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0a-Je-YGj">
+                                <rect key="frame" x="-1" y="441" width="321" height="127"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f_icon-svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="88w-50-mNK">
+                                        <rect key="frame" x="220" y="31" width="64" height="64"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imessage.png" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-cK-6NO">
+                                        <rect key="frame" x="129" y="31" width="64" height="64"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U12-nm-Me0">
+                                        <rect key="frame" x="36" y="31" width="64" height="64"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="messenger.png" translatesAutoresizingMaskIntoConstraints="NO" id="n1n-BU-cc9">
+                                                <rect key="frame" x="4" y="6" width="56" height="52"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.11210429307603355" green="0.52485734257972461" blue="0.82641082114361697" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have such a way with words!" textAlignment="center" lineBreakMode="headTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="6m5-il-E1c">
+                                <rect key="frame" x="35" y="48" width="248" height="155"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U12-nm-Me0">
-                                <rect key="frame" x="211" y="346" width="58" height="58"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="messenger.png" translatesAutoresizingMaskIntoConstraints="NO" id="n1n-BU-cc9">
-                                        <rect key="frame" x="4" y="5" width="50" height="48"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imessage.png" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-cK-6NO">
-                                <rect key="frame" x="130" y="346" width="58" height="58"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="refresh_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="tnm-0f-qzC">
-                                <rect key="frame" x="48" y="345" width="60" height="60"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnm-0f-qzC">
+                                <rect key="frame" x="129" y="225" width="60" height="60"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lEp-zU-WDf" appends="YES" id="F9g-0a-7wB"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.63137254901960782" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                     </view>
-                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="complimentLabel" destination="6m5-il-E1c" id="IHL-aD-E08"/>
+                        <outlet property="facebookImageView" destination="88w-50-mNK" id="9qX-HD-TJq"/>
                         <outlet property="messengerBackgroundView" destination="U12-nm-Me0" id="OZ7-TL-fLd"/>
+                        <outlet property="refreshButton" destination="tnm-0f-qzC" id="anf-NW-Q9w"/>
+                        <outlet property="shareView" destination="h0a-Je-YGj" id="P4v-ZJ-QwH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lEp-zU-WDf">
+                    <connections>
+                        <action selector="onRefreshTapped:" destination="BYZ-38-t0r" id="uGH-iO-SO0"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="129" y="321"/>
         </scene>
     </scenes>
     <resources>
+        <image name="f_icon-svg.png" width="2000" height="2000"/>
         <image name="imessage.png" width="300" height="300"/>
         <image name="messenger.png" width="300" height="300"/>
-        <image name="refresh_white.png" width="512" height="512"/>
     </resources>
 </document>
