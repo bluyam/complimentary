@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 import FBSDKMessengerShareKit
 import MessageUI
 
@@ -16,7 +17,6 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     @IBOutlet var messengerBackgroundView: UIView!
     @IBOutlet var refreshButton: UIImageView!
     @IBOutlet var messengerButton: UIImageView!
-    @IBOutlet var actualMessengerButton: UIButton!
     @IBOutlet var shareView: UIView!
     @IBOutlet var facebookImageView: UIImageView!
     
@@ -117,7 +117,6 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
         
         // send views to correct zPosition
         shareView.layer.zPosition = -1
-        // actualMessengerButton.layer.zPosition = 10
         
         // get random compliment
         setCurrentCompliment()
@@ -147,6 +146,14 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
         if MFMessageComposeViewController.canSendText() {
             self.presentViewController(controller, animated: true, completion: nil)
         }
+    }
+    
+    @IBAction func onFBTapped(sender: AnyObject) {
+        let shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        shareToFacebook.setInitialText("\(currentCompliment) (via Complimentary)")
+        shareToFacebook.addImage(UIImage(named: "complimentary_logo_draft1.png"))
+        self.presentViewController(shareToFacebook, animated: true, completion: nil)
+        
     }
     
     func setCurrentCompliment() {

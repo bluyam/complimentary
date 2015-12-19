@@ -15,6 +15,7 @@
 		F52469721C251A3700FE7404 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52469711C251A3700FE7404 /* FBSDKMessengerShareKit.framework */; };
 		F52469741C25200C00FE7404 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52469731C25200C00FE7404 /* MessageUI.framework */; };
 		F52469781C2542D900FE7404 /* complimentary_logo_draft1.png in Resources */ = {isa = PBXBuildFile; fileRef = F52469771C2542D900FE7404 /* complimentary_logo_draft1.png */; };
+		F524697A1C254B5700FE7404 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52469791C254B5700FE7404 /* Social.framework */; };
 		F52623461C22107400F79090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52623451C22107400F79090 /* AppDelegate.swift */; };
 		F52623481C22107400F79090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52623471C22107400F79090 /* ViewController.swift */; };
 		F526234B1C22107400F79090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52623491C22107400F79090 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		F52469711C251A3700FE7404 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../../FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
 		F52469731C25200C00FE7404 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F52469771C2542D900FE7404 /* complimentary_logo_draft1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = complimentary_logo_draft1.png; path = ../../../complimentary_logo_draft1.png; sourceTree = "<group>"; };
+		F52469791C254B5700FE7404 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		F52623421C22107400F79090 /* Complimentary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Complimentary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52623451C22107400F79090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52623471C22107400F79090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F524697A1C254B5700FE7404 /* Social.framework in Frameworks */,
 				F52469741C25200C00FE7404 /* MessageUI.framework in Frameworks */,
 				F52469721C251A3700FE7404 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				F524696E1C24FF5500FE7404 /* FBSDKCoreKit.framework in Frameworks */,
@@ -102,6 +105,7 @@
 		F524696A1C24FEC300FE7404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F52469791C254B5700FE7404 /* Social.framework */,
 				F52469731C25200C00FE7404 /* MessageUI.framework */,
 				F52469711C251A3700FE7404 /* FBSDKMessengerShareKit.framework */,
 				F524696D1C24FF5500FE7404 /* FBSDKCoreKit.framework */,

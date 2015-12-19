@@ -65,12 +65,17 @@
                                     <action selector="onSMSTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbp-au-ZJl"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucP-0V-1qf">
+                                <rect key="frame" x="220" y="471" width="63" height="66"/>
+                                <connections>
+                                    <action selector="onFBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Mz-9O-zm2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.63137254901960782" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
                     <connections>
-                        <outlet property="actualMessengerButton" destination="OkO-MY-Sxz" id="tNW-BV-evi"/>
                         <outlet property="complimentLabel" destination="6m5-il-E1c" id="IHL-aD-E08"/>
                         <outlet property="facebookImageView" destination="88w-50-mNK" id="9qX-HD-TJq"/>
                         <outlet property="messengerBackgroundView" destination="U12-nm-Me0" id="OZ7-TL-fLd"/>
