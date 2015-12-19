@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:compliments.xcodeproj">
+      location = "self:/Users/trampletheocean/Documents/iOS workspace/compliments/complimentary.xcodeproj">
    </FileRef>
 </Workspace>

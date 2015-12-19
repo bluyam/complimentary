@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import FBSDKMessengerShareKit
 
 class ViewController: UIViewController {
 
     @IBOutlet var complimentLabel: UILabel!
     @IBOutlet var messengerBackgroundView: UIView!
     @IBOutlet var refreshButton: UIImageView!
+    @IBOutlet var messengerButton: UIImageView!
+    @IBOutlet var actualMessengerButton: UIButton!
     @IBOutlet var shareView: UIView!
     @IBOutlet var facebookImageView: UIImageView!
     
@@ -111,8 +114,9 @@ class ViewController: UIViewController {
         messengerBackgroundView.layer.cornerRadius = 13
         facebookImageView.layer.cornerRadius = 16
         
-        // send background view of details to back
+        // send views to correct zPosition
         shareView.layer.zPosition = -1
+        actualMessengerButton.layer.zPosition = 10
         
         // get random compliment
         setCurrentCompliment()
@@ -129,6 +133,12 @@ class ViewController: UIViewController {
     
     @IBAction func onRefreshTapped(sender: UITapGestureRecognizer) {
         setCurrentCompliment()
+    }
+    
+    @IBAction func onMessengerTapped(sender: AnyObject) {
+        let image = UIImage(named: "imessage.png")
+        FBSDKMessengerSharer.shareImage(image, withOptions: nil)
+
     }
     
     func setCurrentCompliment() {

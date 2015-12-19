@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="compliments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="complimentary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -31,9 +31,11 @@
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="messenger.png" translatesAutoresizingMaskIntoConstraints="NO" id="n1n-BU-cc9">
                                                 <rect key="frame" x="4" y="6" width="56" height="52"/>
+                                                <gestureRecognizers/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.11210429307603355" green="0.52485734257972461" blue="0.82641082114361697" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,14 +53,22 @@
                                     <outletCollection property="gestureRecognizers" destination="lEp-zU-WDf" appends="YES" id="F9g-0a-7wB"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkO-MY-Sxz">
+                                <rect key="frame" x="35" y="471" width="62" height="66"/>
+                                <connections>
+                                    <action selector="onMessengerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3v-am-Cx0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.63137254901960782" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
                     <connections>
+                        <outlet property="actualMessengerButton" destination="OkO-MY-Sxz" id="tNW-BV-evi"/>
                         <outlet property="complimentLabel" destination="6m5-il-E1c" id="IHL-aD-E08"/>
                         <outlet property="facebookImageView" destination="88w-50-mNK" id="9qX-HD-TJq"/>
                         <outlet property="messengerBackgroundView" destination="U12-nm-Me0" id="OZ7-TL-fLd"/>
+                        <outlet property="messengerButton" destination="n1n-BU-cc9" id="ySX-sK-fFz"/>
                         <outlet property="refreshButton" destination="tnm-0f-qzC" id="anf-NW-Q9w"/>
                         <outlet property="shareView" destination="h0a-Je-YGj" id="P4v-ZJ-QwH"/>
                     </connections>
