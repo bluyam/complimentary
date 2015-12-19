@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="complimentary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Complimentary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -46,6 +46,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkO-MY-Sxz">
+                                <rect key="frame" x="35" y="471" width="62" height="66"/>
+                                <connections>
+                                    <action selector="onMessengerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3v-am-Cx0"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnm-0f-qzC">
                                 <rect key="frame" x="129" y="225" width="60" height="60"/>
                                 <gestureRecognizers/>
@@ -53,10 +59,10 @@
                                     <outletCollection property="gestureRecognizers" destination="lEp-zU-WDf" appends="YES" id="F9g-0a-7wB"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkO-MY-Sxz">
-                                <rect key="frame" x="35" y="471" width="62" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gd-A3-Cy5">
+                                <rect key="frame" x="124" y="471" width="71" height="66"/>
                                 <connections>
-                                    <action selector="onMessengerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3v-am-Cx0"/>
+                                    <action selector="onSMSTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbp-au-ZJl"/>
                                 </connections>
                             </button>
                         </subviews>

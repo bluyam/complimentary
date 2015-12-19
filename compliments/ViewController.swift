@@ -8,8 +8,9 @@
 
 import UIKit
 import FBSDKMessengerShareKit
+import MessageUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
 
     @IBOutlet var complimentLabel: UILabel!
     @IBOutlet var messengerBackgroundView: UIView!
@@ -116,7 +117,7 @@ class ViewController: UIViewController {
         
         // send views to correct zPosition
         shareView.layer.zPosition = -1
-        actualMessengerButton.layer.zPosition = 10
+        // actualMessengerButton.layer.zPosition = 10
         
         // get random compliment
         setCurrentCompliment()
@@ -136,15 +137,38 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onMessengerTapped(sender: AnyObject) {
-        let image = UIImage(named: "imessage.png")
+        let image = UIImage(named: "complimentary_logo_draft1.png")
         FBSDKMessengerSharer.shareImage(image, withOptions: nil)
 
+    }
+    
+    @IBAction func onSMSTapped(sender: AnyObject) {
+        let controller = configuredMessageComposeViewController()
+        if MFMessageComposeViewController.canSendText() {
+            self.presentViewController(controller, animated: true, completion: nil)
+        }
     }
     
     func setCurrentCompliment() {
         let index = Int(arc4random_uniform(81))
         currentCompliment = compliments[index]
         complimentLabel.text = currentCompliment
+    }
+    
+    func configuredMessageComposeViewController() -> MFMessageComposeViewController {
+        let messageComposerVC = MFMessageComposeViewController()
+        messageComposerVC.body = "\(currentCompliment) (Sent via Complimentary)"
+        messageComposerVC.messageComposeDelegate = self
+        return messageComposerVC
+    }
+    
+    func showSendMessageErrorAlert() {
+        // error message when messsage cannot be sent
+    }
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+        
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

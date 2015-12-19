@@ -13,6 +13,8 @@
 		F524696E1C24FF5500FE7404 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F524696D1C24FF5500FE7404 /* FBSDKCoreKit.framework */; };
 		F52469701C25033300FE7404 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F524696F1C25033300FE7404 /* Default-568h@2x.png */; };
 		F52469721C251A3700FE7404 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52469711C251A3700FE7404 /* FBSDKMessengerShareKit.framework */; };
+		F52469741C25200C00FE7404 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52469731C25200C00FE7404 /* MessageUI.framework */; };
+		F52469781C2542D900FE7404 /* complimentary_logo_draft1.png in Resources */ = {isa = PBXBuildFile; fileRef = F52469771C2542D900FE7404 /* complimentary_logo_draft1.png */; };
 		F52623461C22107400F79090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52623451C22107400F79090 /* AppDelegate.swift */; };
 		F52623481C22107400F79090 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52623471C22107400F79090 /* ViewController.swift */; };
 		F526234B1C22107400F79090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52623491C22107400F79090 /* Main.storyboard */; };
@@ -49,17 +51,19 @@
 		F524696D1C24FF5500FE7404 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		F524696F1C25033300FE7404 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F52469711C251A3700FE7404 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = ../../FacebookSDK/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
-		F52623421C22107400F79090 /* complimentary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = complimentary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52469731C25200C00FE7404 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F52469771C2542D900FE7404 /* complimentary_logo_draft1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = complimentary_logo_draft1.png; path = ../../../complimentary_logo_draft1.png; sourceTree = "<group>"; };
+		F52623421C22107400F79090 /* Complimentary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Complimentary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52623451C22107400F79090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52623471C22107400F79090 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F526234A1C22107400F79090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F526234C1C22107400F79090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F526234F1C22107400F79090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52623511C22107400F79090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52623561C22107400F79090 /* complimentary.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = complimentary.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52623561C22107400F79090 /* Complimentary.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Complimentary.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F526235A1C22107400F79090 /* complimentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = complimentsTests.swift; sourceTree = "<group>"; };
 		F526235C1C22107400F79090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52623611C22107400F79090 /* complimentary.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = complimentary.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52623611C22107400F79090 /* Complimentary.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Complimentary.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52623651C22107400F79090 /* complimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = complimentsUITests.swift; sourceTree = "<group>"; };
 		F52623671C22107400F79090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52623731C22165D00F79090 /* messenger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messenger.png; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52469741C25200C00FE7404 /* MessageUI.framework in Frameworks */,
 				F52469721C251A3700FE7404 /* FBSDKMessengerShareKit.framework in Frameworks */,
 				F524696E1C24FF5500FE7404 /* FBSDKCoreKit.framework in Frameworks */,
 			);
@@ -97,6 +102,7 @@
 		F524696A1C24FEC300FE7404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F52469731C25200C00FE7404 /* MessageUI.framework */,
 				F52469711C251A3700FE7404 /* FBSDKMessengerShareKit.framework */,
 				F524696D1C24FF5500FE7404 /* FBSDKCoreKit.framework */,
 			);
@@ -118,9 +124,9 @@
 		F52623431C22107400F79090 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F52623421C22107400F79090 /* complimentary.app */,
-				F52623561C22107400F79090 /* complimentary.xctest */,
-				F52623611C22107400F79090 /* complimentary.xctest */,
+				F52623421C22107400F79090 /* Complimentary.app */,
+				F52623561C22107400F79090 /* Complimentary.temp_caseinsensitive_rename.xctest */,
+				F52623611C22107400F79090 /* Complimentary.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 		F52623441C22107400F79090 /* compliments */ = {
 			isa = PBXGroup;
 			children = (
+				F52469771C2542D900FE7404 /* complimentary_logo_draft1.png */,
 				F52623791C22206E00F79090 /* refresh_white.png */,
 				F52623751C22173F00F79090 /* imessage.png */,
 				F52623731C22165D00F79090 /* messenger.png */,
@@ -179,7 +186,7 @@
 			);
 			name = complimentary;
 			productName = compliments;
-			productReference = F52623421C22107400F79090 /* complimentary.app */;
+			productReference = F52623421C22107400F79090 /* Complimentary.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F52623551C22107400F79090 /* complimentaryTests */ = {
@@ -197,7 +204,7 @@
 			);
 			name = complimentaryTests;
 			productName = complimentsTests;
-			productReference = F52623561C22107400F79090 /* complimentary.xctest */;
+			productReference = F52623561C22107400F79090 /* Complimentary.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F52623601C22107400F79090 /* complimentaryUITests */ = {
@@ -215,7 +222,7 @@
 			);
 			name = complimentaryUITests;
 			productName = complimentsUITests;
-			productReference = F52623611C22107400F79090 /* complimentary.xctest */;
+			productReference = F52623611C22107400F79090 /* Complimentary.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F526233D1C22107400F79090 /* Build configuration list for PBXProject "complimentary" */;
+			buildConfigurationList = F526233D1C22107400F79090 /* Build configuration list for PBXProject "Complimentary" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -271,6 +278,7 @@
 				F52623761C22173F00F79090 /* imessage.png in Resources */,
 				F52469701C25033300FE7404 /* Default-568h@2x.png in Resources */,
 				F52469651C2343AC00FE7404 /* facebook.png in Resources */,
+				F52469781C2542D900FE7404 /* complimentary_logo_draft1.png in Resources */,
 				F52623741C22165D00F79090 /* messenger.png in Resources */,
 				F526234D1C22107400F79090 /* Assets.xcassets in Resources */,
 				F52469691C23469900FE7404 /* f_icon-svg.png in Resources */,
@@ -450,7 +458,8 @@
 				INFOPLIST_FILE = compliments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluyam.compliments;
-				PRODUCT_NAME = complimentary;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
+				PRODUCT_NAME = Complimentary;
 			};
 			name = Debug;
 		};
@@ -467,7 +476,8 @@
 				INFOPLIST_FILE = compliments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluyam.compliments;
-				PRODUCT_NAME = complimentary;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME)";
+				PRODUCT_NAME = Complimentary;
 			};
 			name = Release;
 		};
@@ -478,8 +488,8 @@
 				INFOPLIST_FILE = complimentsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluyam.complimentsTests;
-				PRODUCT_NAME = complimentary;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/complimentary.app/complimentary";
+				PRODUCT_NAME = Complimentary.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Complimentary.temp_caseinsensitive_rename.app/Complimentary.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -490,8 +500,8 @@
 				INFOPLIST_FILE = complimentsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluyam.complimentsTests;
-				PRODUCT_NAME = complimentary;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/complimentary.app/complimentary";
+				PRODUCT_NAME = Complimentary.temp_caseinsensitive_rename;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Complimentary.temp_caseinsensitive_rename.app/Complimentary.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -501,7 +511,7 @@
 				INFOPLIST_FILE = complimentsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluyam.complimentsUITests;
-				PRODUCT_NAME = complimentary;
+				PRODUCT_NAME = Complimentary.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = compliments;
 				USES_XCTRUNNER = YES;
 			};
@@ -513,7 +523,7 @@
 				INFOPLIST_FILE = complimentsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bluyam.complimentsUITests;
-				PRODUCT_NAME = complimentary;
+				PRODUCT_NAME = Complimentary.temp_caseinsensitive_rename;
 				TEST_TARGET_NAME = compliments;
 				USES_XCTRUNNER = YES;
 			};
@@ -522,7 +532,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F526233D1C22107400F79090 /* Build configuration list for PBXProject "complimentary" */ = {
+		F526233D1C22107400F79090 /* Build configuration list for PBXProject "Complimentary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F52623681C22107400F79090 /* Debug */,
