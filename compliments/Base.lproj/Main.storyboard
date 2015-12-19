@@ -21,13 +21,13 @@
                                 <rect key="frame" x="-1" y="441" width="321" height="127"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f_icon-svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="88w-50-mNK">
-                                        <rect key="frame" x="220" y="31" width="64" height="64"/>
+                                        <rect key="frame" x="220" y="19" width="64" height="64"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imessage.png" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-cK-6NO">
-                                        <rect key="frame" x="129" y="31" width="64" height="64"/>
+                                        <rect key="frame" x="129" y="19" width="64" height="64"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U12-nm-Me0">
-                                        <rect key="frame" x="36" y="31" width="64" height="64"/>
+                                        <rect key="frame" x="36" y="19" width="64" height="64"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="messenger.png" translatesAutoresizingMaskIntoConstraints="NO" id="n1n-BU-cc9">
                                                 <rect key="frame" x="4" y="6" width="56" height="52"/>
@@ -37,6 +37,24 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Messenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH7-NB-KPD">
+                                        <rect key="frame" x="24" y="91" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iMessage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWy-a3-Wak">
+                                        <rect key="frame" x="117" y="91" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-lL-wMg">
+                                        <rect key="frame" x="208" y="91" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.11210429307603355" green="0.52485734257972461" blue="0.82641082114361697" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -47,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkO-MY-Sxz">
-                                <rect key="frame" x="35" y="471" width="62" height="66"/>
+                                <rect key="frame" x="35" y="459" width="62" height="66"/>
                                 <connections>
                                     <action selector="onMessengerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3v-am-Cx0"/>
                                 </connections>
@@ -60,13 +78,13 @@
                                 </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gd-A3-Cy5">
-                                <rect key="frame" x="124" y="471" width="71" height="66"/>
+                                <rect key="frame" x="124" y="459" width="71" height="66"/>
                                 <connections>
                                     <action selector="onSMSTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbp-au-ZJl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucP-0V-1qf">
-                                <rect key="frame" x="220" y="471" width="63" height="66"/>
+                                <rect key="frame" x="220" y="459" width="63" height="66"/>
                                 <connections>
                                     <action selector="onFBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Mz-9O-zm2"/>
                                 </connections>

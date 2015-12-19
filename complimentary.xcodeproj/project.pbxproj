@@ -10,7 +10,7 @@
 		F52469651C2343AC00FE7404 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F52469641C2343AC00FE7404 /* facebook.png */; };
 		F52469671C2345B000FE7404 /* facebook-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F52469661C2345B000FE7404 /* facebook-app-icon.png */; };
 		F52469691C23469900FE7404 /* f_icon-svg.png in Resources */ = {isa = PBXBuildFile; fileRef = F52469681C23469900FE7404 /* f_icon-svg.png */; };
-		F524696E1C24FF5500FE7404 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F524696D1C24FF5500FE7404 /* FBSDKCoreKit.framework */; };
+		F524696E1C24FF5500FE7404 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F524696D1C24FF5500FE7404 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F52469701C25033300FE7404 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F524696F1C25033300FE7404 /* Default-568h@2x.png */; };
 		F52469721C251A3700FE7404 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52469711C251A3700FE7404 /* FBSDKMessengerShareKit.framework */; };
 		F52469741C25200C00FE7404 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52469731C25200C00FE7404 /* MessageUI.framework */; };

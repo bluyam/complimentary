@@ -5,6 +5,28 @@
 //  Created by Kyle Wilson on 12/16/15.
 //  Copyright © 2015 Bluyam Inc. All rights reserved.
 //
+//  TODO:
+//
+//  (1) Generate Compliments as Image [X]
+//      Desired additions
+//          generate from independent view with logo and higher resolution
+//          sync to messenger color scheme
+//          make it a gif
+//  (2) Integrate more services
+//      Twitter
+//      Flickr
+//      Google+
+//      LinkedIn
+//      Email
+//  (3) Add Launch Screen
+//  (4) Animate UI
+//      slide down to refresh
+//      slide share menu up and down
+//      flip text on refresh compliment
+//      slide icons along shareView
+//  (5) Reestablish Size Classes
+//  (6) Create 1024x1024 and 16x16 logo for FB App
+//  (7) Pull Compliments from JSON
 
 import UIKit
 import Social
@@ -136,7 +158,7 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     }
     
     @IBAction func onMessengerTapped(sender: AnyObject) {
-        let image = UIImage(named: "complimentary_logo_draft1.png")
+        let image = generateComplimentImage()
         FBSDKMessengerSharer.shareImage(image, withOptions: nil)
 
     }
@@ -151,7 +173,7 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     @IBAction func onFBTapped(sender: AnyObject) {
         let shareToFacebook : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
         shareToFacebook.setInitialText("\(currentCompliment) (via Complimentary)")
-        shareToFacebook.addImage(UIImage(named: "complimentary_logo_draft1.png"))
+        shareToFacebook.addImage(generateComplimentImage())
         self.presentViewController(shareToFacebook, animated: true, completion: nil)
         
     }
@@ -176,6 +198,30 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
         
         controller.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func generateComplimentImage() -> UIImage {
+        
+        // take screenshot
+        let view: UIView = self.viewIfLoaded!
+        UIGraphicsBeginImageContext(view.bounds.size)
+        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        // crop to compliment
+        let ciImage = CIImage(image: image)
+        var cgImage = convertCIImageToCGImage(ciImage!)
+        cgImage = CGImageCreateWithImageInRect(cgImage, CGRect(x: 20, y: 33, width: 278, height: 185))
+        
+        return UIImage(CGImage: cgImage)
+    }
+    
+    
+    func convertCIImageToCGImage(inputImage: CIImage) -> CGImage! {
+        let context = CIContext(options: nil)
+        return context.createCGImage(inputImage, fromRect: inputImage.extent)
+
     }
 }
 
