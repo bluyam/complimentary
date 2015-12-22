@@ -18,40 +18,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h0a-Je-YGj">
-                                <rect key="frame" x="-1" y="441" width="321" height="127"/>
+                                <rect key="frame" x="-1" y="450" width="321" height="118"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f_icon-svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="88w-50-mNK">
-                                        <rect key="frame" x="220" y="19" width="64" height="64"/>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imessage.png" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-cK-6NO">
-                                        <rect key="frame" x="129" y="19" width="64" height="64"/>
+                                        <rect key="frame" x="96" y="20" width="60" height="60"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Messenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH7-NB-KPD">
+                                        <rect key="frame" x="10" y="82" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iMessage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWy-a3-Wak">
+                                        <rect key="frame" x="82" y="82" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Twitter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Op9-nl-7ga">
+                                        <rect key="frame" x="226" y="82" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U12-nm-Me0">
-                                        <rect key="frame" x="36" y="19" width="64" height="64"/>
+                                        <rect key="frame" x="24" y="20" width="60" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="messenger.png" translatesAutoresizingMaskIntoConstraints="NO" id="n1n-BU-cc9">
-                                                <rect key="frame" x="4" y="6" width="56" height="52"/>
+                                                <rect key="frame" x="4" y="5" width="53" height="49"/>
                                                 <gestureRecognizers/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Messenger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kH7-NB-KPD">
-                                        <rect key="frame" x="24" y="91" width="89" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iMessage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWy-a3-Wak">
-                                        <rect key="frame" x="117" y="91" width="89" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="5s1-Zb-4wl">
+                                        <rect key="frame" x="240" y="20" width="60" height="60"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook.png" translatesAutoresizingMaskIntoConstraints="NO" id="88w-50-mNK">
+                                        <rect key="frame" x="166" y="18" width="64" height="64"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-lL-wMg">
-                                        <rect key="frame" x="208" y="91" width="89" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="154" y="82" width="89" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -64,12 +73,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkO-MY-Sxz">
-                                <rect key="frame" x="35" y="459" width="62" height="66"/>
-                                <connections>
-                                    <action selector="onMessengerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3v-am-Cx0"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnm-0f-qzC">
                                 <rect key="frame" x="129" y="225" width="60" height="60"/>
                                 <gestureRecognizers/>
@@ -77,16 +80,28 @@
                                     <outletCollection property="gestureRecognizers" destination="lEp-zU-WDf" appends="YES" id="F9g-0a-7wB"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucP-0V-1qf">
+                                <rect key="frame" x="167" y="471" width="60" height="57"/>
+                                <connections>
+                                    <action selector="onFBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Mz-9O-zm2"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gd-A3-Cy5">
-                                <rect key="frame" x="124" y="459" width="71" height="66"/>
+                                <rect key="frame" x="91" y="471" width="64" height="57"/>
                                 <connections>
                                     <action selector="onSMSTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nbp-au-ZJl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucP-0V-1qf">
-                                <rect key="frame" x="220" y="459" width="63" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtn-qk-Go5">
+                                <rect key="frame" x="239" y="471" width="60" height="57"/>
                                 <connections>
-                                    <action selector="onFBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Mz-9O-zm2"/>
+                                    <action selector="onTwitterTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pkS-wM-bOa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkO-MY-Sxz">
+                                <rect key="frame" x="20" y="471" width="63" height="57"/>
+                                <connections>
+                                    <action selector="onMessengerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3v-am-Cx0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,6 +115,7 @@
                         <outlet property="messengerButton" destination="n1n-BU-cc9" id="ySX-sK-fFz"/>
                         <outlet property="refreshButton" destination="tnm-0f-qzC" id="anf-NW-Q9w"/>
                         <outlet property="shareView" destination="h0a-Je-YGj" id="P4v-ZJ-QwH"/>
+                        <outlet property="twitterImageView" destination="5s1-Zb-4wl" id="zEA-Q1-GJw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -113,8 +129,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="f_icon-svg.png" width="2000" height="2000"/>
+        <image name="facebook.png" width="2000" height="2000"/>
         <image name="imessage.png" width="300" height="300"/>
         <image name="messenger.png" width="300" height="300"/>
+        <image name="twitter.png" width="500" height="500"/>
     </resources>
 </document>

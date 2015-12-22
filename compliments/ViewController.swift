@@ -13,13 +13,13 @@
 //          sync to messenger color scheme
 //          make it a gif
 //  (2) Integrate more services
-//      Twitter
+//      Twitter [X]
 //      Flickr
 //      Instagram
 //      Google+
 //      LinkedIn
 //      Email
-//  (3) Add Launch Screen
+//  (3) Add Launch Screen [X]
 //  (4) Animate UI
 //      slide down to refresh
 //      slide share menu up and down
@@ -41,6 +41,7 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
     @IBOutlet var messengerButton: UIImageView!
     @IBOutlet var shareView: UIView!
     @IBOutlet var facebookImageView: UIImageView!
+    @IBOutlet var twitterImageView: UIImageView!
     
     var compliments = [ "Your smile is contagious.",
         "You look great today.",
@@ -136,6 +137,8 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
         // set rounded corners for simulated messenger app icon
         messengerBackgroundView.layer.cornerRadius = 13
         facebookImageView.layer.cornerRadius = 16
+        twitterImageView.layer.cornerRadius = 13
+        // twitterImageView.layer.backgroundColor = shareView.layer.backgroundColor
         
         // send views to correct zPosition
         shareView.layer.zPosition = -1
@@ -176,6 +179,13 @@ class ViewController: UIViewController, MFMessageComposeViewControllerDelegate {
         shareToFacebook.addImage(generateComplimentImage())
         self.presentViewController(shareToFacebook, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func onTwitterTapped(sender: AnyObject) {
+        let shareToTwitter : SLComposeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        shareToTwitter.setInitialText("\(currentCompliment) (via Complimentary)")
+        shareToTwitter.addImage(UIImage(named: "logo.png"))
+        self.presentViewController(shareToTwitter, animated: true, completion: nil)
     }
     
     func setCurrentCompliment() {

@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="complimentary_logo_draft1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZDO-c5-LD0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZDO-c5-LD0">
                                 <rect key="frame" x="172" y="172" width="256" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZDO-c5-LD0" secondAttribute="height" multiplier="1:1" id="Kn2-cv-Fcj"/>
@@ -58,6 +58,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="complimentary_logo_draft1.png" width="512" height="512"/>
+        <image name="logo.png" width="512" height="512"/>
     </resources>
 </document>
