@@ -15,6 +15,7 @@
 //  (2) Integrate more services
 //      Twitter
 //      Flickr
+//      Instagram
 //      Google+
 //      LinkedIn
 //      Email
@@ -25,8 +26,7 @@
 //      flip text on refresh compliment
 //      slide icons along shareView
 //  (5) Reestablish Size Classes
-//  (6) Create 1024x1024 and 16x16 logo for FB App
-//  (7) Pull Compliments from JSON
+//  (6) Pull Compliments from JSON
 
 import UIKit
 import Social
